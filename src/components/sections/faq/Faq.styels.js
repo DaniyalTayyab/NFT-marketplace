@@ -4,18 +4,24 @@ export const Section = styled.section`
   min-height: 100vh;
   width: 100vw;
   background-color: ${(props) => props.theme.body};
+  color: ${(props) => props.theme.text};
   position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
 `;
 
 export const Title = styled.h1`
   font-size: ${(props) => props.theme.fontxxl};
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: ${(props) => props.theme.text};
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   margin: 1rem auto;
   border-bottom: 2px solid ${(props) => props.theme.text};
+  width: fit-content;
 `;
 
 export const Container = styled.div`
@@ -25,5 +31,8 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+`;
+
+export const Box = styled.div`
+  width: 45%;
 `;
